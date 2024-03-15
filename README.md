@@ -17,7 +17,7 @@ Postgres is also hosted in Docker, using [Bitnami - Postgres](https://github.com
 
 The pipeline is fairly simply, where we use Python to generate a series of events and send them to a Kafka Topic
 
-![[event-driven-kafka.png]]
+![Event Drive Kafka](event-driven-kafka.png)
 
 The output is generate from a Postgres database, where we store the raw data and periodic aggregates that can be used for reporting
 
@@ -34,7 +34,7 @@ Files output
 
 I've include my conda env file to recreate my same environment
 
-```sh
+```zsh
 conda env create -f environment.yml
 ```
 
